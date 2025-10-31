@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi sitio InHackeable</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Bienvenido Hacker</h2>
+    <p>Este sitio es mi página personal fue diseñado con la más alta tecnología anti hackeos así que no intentes conseguir información de aquí pues no lo lograrás yo que me iría, pero si quieres aprender Hacking de verdad de tu info en los siguientes apartados</p>
+
+    <label for="name">Escribe tu nombre o user loser</label>
+    <input id="name" placeholder="Escribe tu nombre" />
+    <button id="greet">Mandar nombre</button>
+    <div id="output"></div>
+
+    <hr />
+
+    <label for="comment">¿Quieres dejarme alguna buena reseña o halago?</label>
+    <textarea id="comment" rows="3" placeholder="Escribe una buena reseña o halago para mi, el inhackeable"></textarea>
+    <button id="save">Mandar halago</button>
+
+    <div id="commentsList" style="margin-top:12px;"></div>
+
+    <hr />
+    <small class="note">La bandera está almacenada en localStorage bajo la clave <code>flag</code>. Intenta conseguirla explotando XSS.</small>
+  </div>
+
+  <script src="JS/app.js"></script>
+
+</body>
+</html>
